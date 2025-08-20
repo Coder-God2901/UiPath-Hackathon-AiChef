@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bill Results</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Processed Bill</h1>
+        
+        <h2>Extracted Items:</h2>
+        <ul>
+            {% for item in items %}
+                <li>{{ item }}</li>
+            {% endfor %}
+        </ul>
+
+        <h2>Model Analysis:</h2>
+        <pre>{{ result | tojson(indent=2) }}</pre>
+
+        <h2>Download Results:</h2>
+        <a href="{{ url_for('main.download_file', filetype='csv', filename=csv_file) }}">
+            <button>Download CSV</button>
+        </a>
+        <a href="{{ url_for('main.download_file', filetype='json', filename=json_file) }}">
+            <button>Download JSON</button>
+        </a>
+
+        <br><br>
+        <a href="/"><button>Upload Another</button></a>
+    </div>
+</body>
+</html>

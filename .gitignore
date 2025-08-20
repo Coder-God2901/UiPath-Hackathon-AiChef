@@ -1,0 +1,17 @@
+# Python virtual environment
+/venv
+/grocery-bill-ai/venv
+
+# Node.js modules
+/node_modules
+
+# Next.js build output
+/.next/
+
+# Large files and zip archives
+*.zip
+*.rar
+
+# OS specific files
+.DS_Store
+Thumbs.db

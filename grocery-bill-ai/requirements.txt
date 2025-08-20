@@ -1,0 +1,8 @@
+Flask
+flask-cors
+pytesseract
+Pillow
+pdf2image
+pandas
+easyocr
+numpy
