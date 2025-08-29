@@ -5,7 +5,7 @@ import json
 
 # Configure the Gemini API with your key.
 # Replace with your actual key and consider using environment variables.
-genai.configure(api_key="AIzaSyBKJI-zDAclSVon5ywR_U7hkGeFUNrSJhw")
+genai.configure(api_key="YOUR_API_KEY")
 
 def analyze_bill(items):
     """
